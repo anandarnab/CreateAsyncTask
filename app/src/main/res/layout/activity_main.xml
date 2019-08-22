@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context=".MainActivity">
+
+	<EditText
+		android:id="@+id/input_array"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="Enter the Array (Example: 1,2,3,..)"
+		android:layout_margin="5dp"
+		android:inputType="number"
+		android:digits="0123456789.,"
+		/>
+
+
+	<EditText
+		android:id="@+id/position_array"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="Enter positions of above array to remove"
+		android:layout_margin="5dp"
+		android:inputType="number"
+		android:digits="123456789.,"
+		/>
+
+
+	<Button
+		android:id="@+id/result_btn"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#444AAA"
+		android:textColor="#FFF"
+		android:text="Get Result"
+		android:layout_margin="20dp"
+		/>
+
+
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/sorted_list"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:visibility="gone">
+	</android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
